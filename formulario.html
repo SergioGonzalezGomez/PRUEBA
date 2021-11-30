@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hola, rellena los siguientes campos</h1>
+    <form autocomplete="off" action="https://reqres.in/api/users" method="get">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="fname">Nombre</label>
+        <input id="fname" name="first_name" type="text" required />
+
+        <label for="lname">Apellido</label>
+        <input id="lname" name="last_name" type="text" required />
+
+        <label for="city">Ciudad</label>
+        <select id="city" name="user_city">
+          <option value="Madrid">Madrid</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Valencia">Valencia</option>
+          <option value="Granada">Granada</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="username">Nombre de usuario</label>
+        <input type="text" id="username" name="user_name" required/>
+
+        <label for="pwd">Contraseña</label>
+        <input
+          type="password"
+          id="pwd"
+          name="password"
+          placeholder="Entre 4 y 10 caracteres"
+          required
+          pattern="[A-Za-z0-9]{4,10}"
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="user_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" />
+
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" id="date" name="date-of-birth" />
+
+        <label for="fcolor">Color Favorito</label>
+        <input type="color" id="fcolor" name="user_color" />
+
+        <label for="vip">¿Quieres ser cliente VIP?</label>
+        <input type="checkbox" id="vip" name="user_vip">
+
+        <label>Mensaje:</label>
+        <textarea
+          id="message"
+          name="user-message"
+          placeholder="Escribe aquí tu mensaje"
+          rows="10"
+          cols="30"
+        >
+        </textarea>
+        
+    </fieldset>
+    
+    <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

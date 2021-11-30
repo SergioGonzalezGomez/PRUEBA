@@ -1,0 +1,55 @@
+/***Selectores de etiqueta***/
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/***Selectores de CLASE***/
+
+.subtitle1 {
+    color: blue;
+    font-size: 2rem;
+}
+.subtitle2 {
+    color: purple;
+    font-size: 2rem;
+}
+/*Selectores de ID*/
+#section1 {
+    background-color: whitesmoke;  
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: saddlebrown;
+    font-size: 3rem;
+}
+.name {
+    color: salmon;
+}
+.main-img {
+    width: 25rem; /*
+    % = 16px
+    1em / rem = 16px
+    El rem coge la referencia de su padre
+    El em la coge del elemento de ruta HTML que son 16px. 
+    */
+}
+
+nav {
+    background-color: slateblue;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+/*Selectores por relacion*/
+nav a {
+    margin-right: 1em;
+    color: white ;
+}
